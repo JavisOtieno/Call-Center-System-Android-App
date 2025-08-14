@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        >
+
+
+        <include layout="@layout/toolbar" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/spacing_medium"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:text="PASTE LINK"
+        android:layout_marginHorizontal="5dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/grey_60" />
+
+    <EditText
+        style="@style/EditText.Flat.Grey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        android:background="@drawable/edit_text_round_bg_white"
+        android:minHeight="@dimen/spacing_xmlarge"
+        android:paddingLeft="@dimen/spacing_middle"
+        android:minLines="2"
+        android:id="@+id/linkEditText"
+        android:paddingRight="@dimen/spacing_middle"
+        android:text="https://testproject.scgafrica.com/videocall/fsfs-20250723073745-0ntdxj" />
+
+<!--        <Button-->
+<!--            android:id="@+id/joinRoom"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Join Room"-->
+<!--            android:layout_marginTop="8dp"/>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/copyLinkButton"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="55dp"
+                android:layout_marginLeft="-4dp"
+                android:layout_marginRight="-4dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/btn_rounded_accent"
+                android:text="Copy Link"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="@android:color/white" />
+            <View
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/shareLinkButton"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="55dp"
+                android:layout_marginLeft="-4dp"
+                android:layout_marginRight="-4dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/btn_rounded_green"
+                android:text="Share"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="@android:color/white" />
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/joinRoom"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="55dp"
+            android:layout_marginLeft="-4dp"
+            android:layout_marginRight="-4dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/btn_rounded_primary"
+            android:text="Join Room"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textColor="@android:color/white" />
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    <com.twilio.video.VideoView
+        android:id="@+id/local_video_view"
+        android:layout_width="match_parent"
+
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+         />
+<!--    android:mirror="true"-->
+
+    <com.twilio.video.VideoView
+        android:id="@+id/remote_video_view"
+        android:layout_width="match_parent"
+
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="8dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

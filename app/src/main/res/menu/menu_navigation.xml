@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/grp_1"
+        >
+        <!--android:checkableBehavior="single"-->
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Dashboard Alerts" />
+
+        <item
+            android:id="@+id/nav_callers"
+            android:icon="@drawable/ic_person"
+            android:title="Callers" />
+
+<!--        <item-->
+<!--            android:id="@+id/nav_receive"-->
+<!--            android:icon="@drawable/ic_support_agent"-->
+<!--            android:title="Make Call" />-->
+
+<!--        <item-->
+<!--            android:id="@+id/nav_message"-->
+<!--            android:icon="@drawable/ic_mail_outline"-->
+<!--            android:title="Send Message" />-->
+
+
+<!--        <item-->
+<!--            android:id="@+id/nav_whatsappmessage"-->
+<!--            android:icon="@drawable/ic_chat_outline"-->
+<!--            android:title="Send Whatsapp Message" />-->
+
+        <item
+            android:id="@+id/nav_incomingcalls"
+            android:icon="@drawable/incoming_call"
+            android:title="Incoming Calls" />
+
+        <item
+            android:id="@+id/nav_outgoingcalls"
+            android:icon="@drawable/outgoing_call"
+            android:title="Outgoing Calls" />
+
+        <item
+            android:id="@+id/nav_messages"
+            android:icon="@drawable/ic_mail"
+            android:title="Messages" />
+
+        <item
+            android:id="@+id/nav_whatsappmessages"
+            android:icon="@drawable/ic_chat"
+            android:title="Whatsapp Messages" />
+
+        <item
+            android:id="@+id/nav_videocalls"
+            android:icon="@drawable/ic_support_agent"
+            android:title="Video Calls" />
+
+        <item
+            android:id="@+id/nav_emails"
+            android:icon="@drawable/ic_mail_outline"
+            android:title="Emails" />
+
+<!--        <item-->
+<!--            android:id="@+id/nav_whatsappmessagesthread"-->
+<!--            android:icon="@drawable/ic_chat"-->
+<!--            android:title="Whatsapp Thread" />-->
+
+        <item
+            android:id="@+id/nav_geminitest"
+            android:icon="@drawable/ic_chat_outline"
+            android:title="Gemini Test" />
+
+<!--        <item-->
+<!--            android:id="@+id/nav_"-->
+<!--            android:icon="@drawable/ic_support_agent"-->
+<!--            android:title="Video Call" />-->
+
+<!--        <item-->
+<!--            android:id="@+id/nav_email"-->
+<!--            android:icon="@drawable/ic_mail_outline"-->
+<!--            android:title="Email" />-->
+
+
+
+
+
+
+
+
+        <!--        <item-->
+<!--            android:id="@+id/nav_pendingorders"-->
+<!--            android:icon="@drawable/ic_arrow_circle_down"-->
+<!--            android:title="Pending Orders" />-->
+
+<!--        <item-->
+<!--            android:id="@+id/nav_localstorage"-->
+<!--            android:icon="@drawable/ic_arrow_circle_down"-->
+<!--            android:title="Local Storage" />-->
+
+
+    </group>
+
+    <group
+        android:id="@+id/grp_3"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_person"
+            android:title="Profile" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_arrow_circle_down"
+            android:title="Log out" />
+
+<!--        <item-->
+<!--            android:id="@+id/nav_geofence"-->
+<!--            android:icon="@drawable/ic_arrow_circle_down"-->
+<!--            android:title="Geofence Test" />-->
+    </group>
+
+</menu>
