@@ -23,8 +23,11 @@ public class Constants {
 //    public static final String STORAGE_URL = "http://rtmstest.javytech.com/storage/";
 
 
-    public static final String SITE_URL = "https://testproject.scgafrica.com/";
-    public static final String BASE_URL = "https://testproject.scgafrica.com/api/";
+//    public static final String SITE_URL = "https://testproject.scgafrica.com/";
+//    public static final String BASE_URL = "https://testproject.scgafrica.com/api/";
+
+    public static final String SITE_URL = "https://callsdemo.av.ke/";
+    public static final String BASE_URL = "https://callsdemo.av.ke/api/";
     public static final String STORAGE_URL = "https://testproject.scgafrica.com/storage/";
 
     public static final Integer EARTH_RADIUS = 6371;

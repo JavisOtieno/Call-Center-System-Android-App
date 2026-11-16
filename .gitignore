@@ -13,3 +13,8 @@
 .externalNativeBuild
 .cxx
 local.properties
+# Built Android artifacts
+*.apk
+*.aab
+app/release/
+app/debug/
